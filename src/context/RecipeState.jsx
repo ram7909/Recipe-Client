@@ -62,7 +62,6 @@ const RecipeState = (props) => {
         "Content-Type": "application/json"
       }
     })
-    console.log(api.data);
     if (api.data.token) {
       localStorage.setItem('token', api.data.token)
       setIsAuthenticate(true)
